@@ -1,0 +1,108 @@
+<!-- Dashboard -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="style_02.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script_02.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="loadingSpinner"></div>
+    <div class="loadingOverlay hiddenOverlay"></div>
+
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="Images/logo.png">
+            <h2>SkySense</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index_01.html">Dashboard</a></li>
+                <li><a href="index_02.html">Tables</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div id="mainContent">
+        <div id="topContent">
+            <div id="userProfile">
+                <span id="circle">FR</span>
+                <span id="hi">Hi, Fatima!</span>
+            </div>
+
+            <div id="barAndTempToggle">
+                <div id="searchBar">
+                    <input id="searchInput" type="text" placeholder="Search..." required>
+                    <button id="searchButton"><i class="fa fa-search"></i></button>
+                </div>
+
+                <!-- <div id="toggleTemperature">
+                    <button id="celsius">°C</i></button>
+                    <button id="fahrenheit">°F</i></button>
+                </div> -->
+            </div>
+        </div>
+
+        <div id="mainDiv">
+            <div id="weatherTable">
+                <table>
+                    <div id="tableHeading">
+                        <div id="filtersContainer" class="hiddenFilters">
+                            <button id="sortAscending">Sort Ascending</button>
+                            <button id="sortDescending">Sort Descending</button>
+                            <button id="filterRain">Filter Rainy Days</button>
+                            <button id="highestTemperature">Highest Temperature</button>
+                            <button id="x">Remove Filters</button>
+                        </div>
+                        <h2>Your Weather Guide: 5-Day Forecast</h2>
+                        <i class="fa fa-sliders" id="toggleFilters" style="font-size:30px; color:#79aef4"></i>
+                    </div>
+
+                    <thead id="thead">
+                        <tr id="tr">
+                            <th>Day</th>
+                            <th>Time</th>
+                            <th>Temperature <span id="unitTemp">(°C)</span></th>
+                            <th>Condition</th>
+                            <th>Weather</th>
+                        </tr>
+                    </thead>
+                    <tbody id="weatherData">
+
+                    </tbody>
+                </table>
+                <div id="paginationControls">
+                    <button id="previousPage" class="paginationButtons">Previous</button>
+                    <p id="pageNumber">Page 1</p>
+                    <button id="nextPage" class="paginationButtons">Next</button>
+                </div>
+            </div>
+
+            <div id="chatbot">
+                <div class="chatbot-header">
+                    <h3 id="chatbotHeadingTxt">BreezeBot</h3>
+                    <button id="clearChat">Clear Chat</button>
+                </div>
+
+                <div id="chatContainer">
+                    <div id="chatMessages"></div>
+                    <div class="input-container">
+                        <input type="text" id="userInput" placeholder="Ask me anything..." />
+                        <button id="sendButton">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
