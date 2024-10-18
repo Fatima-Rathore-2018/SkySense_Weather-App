@@ -36,11 +36,20 @@ To run this application, you will need:
 
 ## Installation
 1. Clone the repository or download the project files.
-2. Install the necessary dependencies using npm.
-3. Open the index.html file in your web browser.
-4. Enter your API key in the relevant section of the code.
-
-
+    You can clone the repository using the following command in your terminal:
+   ```bash
+   git clone https://github.com/Fatima-Rathore-2018/SkySense_Weather-App.git
+   ```
+3. Navigate to the project directory using the command given below.
+   ```bash
+   cd SkySense_Weather-App
+   ```
+5. Install the necessary dependencies using npm.
+   ```bash
+   npm install
+   ```
+4. Enter your API keys in the relevant section of the code.
+   
 ## Executing the Program with Live Server
 
 ### 1. Open Your Project Folder
