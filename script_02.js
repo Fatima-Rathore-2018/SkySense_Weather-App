@@ -128,7 +128,7 @@ $(document).ready(function () {
             const condition = theData.weather[0].description;
             const timeLabel = twelveHourFormat(hour);
             const iconCode = theData.weather[0].icon;
-            const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
+            const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
 
             // <td><img src="${iconUrl}" alt="${condition}" class="weatherIconTable"> <div class="weatherConditionTable">${condition}</div></td>
             const row = `<tr>
