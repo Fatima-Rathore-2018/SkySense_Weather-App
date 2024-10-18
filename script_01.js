@@ -175,7 +175,7 @@ $(document).ready(function () {
 
     // Fetches weather data for charts based on city name.
     function fetchChartData(cityName, apiKey) {
-        const geoApiUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`;
+        const geoApiUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`;
 
         $.getJSON(geoApiUrl, function (geoData) {
             if (geoData.length > 0) {
