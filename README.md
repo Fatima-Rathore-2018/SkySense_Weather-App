@@ -36,8 +36,6 @@ To run this application, you will need:
 
 ## Installation
 1. Clone the repository or download the project files.
-
-
 2. Install the necessary dependencies using npm.
 3. Open the index.html file in your web browser.
 4. Enter your API key in the relevant section of the code.
@@ -45,24 +43,15 @@ To run this application, you will need:
 
 ## Executing the Program with Live Server
 
-### 1. Install Live Server (if not already installed)
-- If you are using Visual Studio Code, you need to install the Live Server extension.
-- Open VS Code, go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side or by pressing `Ctrl + Shift + X`.
-- Search for **"Live Server"** and click **Install**.
-
-### 2. Open Your Project Folder
+### 1. Open Your Project Folder
 - In VS Code, open the folder containing your project files by going to **File > Open Folder...** and selecting your project directory.
 
-### 3. Start Live Server
-- Open your `index.html` file.
+### 2. Start Live Server
+- Open your `.html` file.
 - Right-click anywhere in the editor window and select **"Open with Live Server."**
 - Alternatively, you can click on the **Go Live** button in the bottom right corner of the VS Code window.
 
-### 4. View in Browser
-- This will automatically open your default web browser and navigate to ` http://192.168.100.63:8080` (or a similar address) where your project is being served.
-- Any changes you make to your files will automatically refresh the browser, allowing you to see updates in real-time.
-
-### 5. Stop Live Server
+### 3. Stop Live Server
 - To stop the server, you can click on the **"Port: 5500"** indicator in the bottom right corner of the VS Code window, or simply close the browser tab.
 
 
