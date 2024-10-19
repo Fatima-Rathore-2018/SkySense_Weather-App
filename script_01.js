@@ -52,6 +52,11 @@ $(document).ready(function () {
     $('#searchButton').on('click', function () {
         const cityName = $('#searchInput').val();
 
+         if (cityName === "") {
+            alert("City name field is empty.");
+            return;
+        }
+
         showLoader();
 
         getWeatherByCity(cityName);
@@ -68,6 +73,7 @@ $(document).ready(function () {
             })
             .fail(function (jqXHR, textStatus, errorThrown) {
                 console.error('Error fetching weather data:', textStatus, errorThrown);
+                alert("City not found or invalid. Please enter a valid city name.");
             })
             .always(function () {
                 hideLoader();
