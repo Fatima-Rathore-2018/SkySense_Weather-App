@@ -46,7 +46,11 @@ $(document).ready(function () {
     // Event listener for the search button click.
     $('#searchButton').on('click', function () {
         const cityName = $('#searchInput').val();
-
+        if (cityName === "") {
+            alert("City name field is empty.");
+            return;
+        }
+        
         showLoader();
 
         fetchWeatherByCity(cityName);
@@ -65,6 +69,8 @@ $(document).ready(function () {
             })
             .fail(function () {
                 console.error('Error fetching weather data for the city.');
+
+                alert("City not found or invalid. Please enter a valid city name.");
             })
             .always(function () {
                 hideLoader();
@@ -89,6 +95,8 @@ $(document).ready(function () {
             })
             .fail(function () {
                 console.error('Error fetching weather data');
+
+                alert("City not found or invalid. Please enter a valid city name.");
             })
             .always(function () {
                 hideLoader();
@@ -395,6 +403,8 @@ $(document).ready(function () {
             })
             .fail(function () {
                 console.error('Error fetching weather data for the city.');
+
+                alert("City not found or invalid. Please enter a valid city name.");
             })
             .always(function () {
                 hideLoader();
