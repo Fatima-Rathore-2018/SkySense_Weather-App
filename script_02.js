@@ -323,8 +323,12 @@ $(document).ready(function () {
             // Get the city name after the word 'of'.
             cityName = userInput.slice(ofIndex + 3).trim();
         }
-        cityName = cityName.split(/[?.!]/).join("");
+        cityName = removePunctuation(cityName);
         return cityName;
+    }
+
+    function removePunctuation(str) {
+        return str.replace(/[?.!]/g, "");
     }
 
     // CHATBOT IMPLEMENTATION.
