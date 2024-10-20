@@ -278,7 +278,7 @@ $(document).ready(function () {
         const highestTempData = JSON.parse(JSON.stringify(weatherData));
         highestTempData.list = [highestDay];
 
-        alert(`Highest Temperature: ${highestDay.main.temp}°C`);
+        //alert(`Highest Temperature: ${highestDay.main.temp}°C`);
 
         displayForecastData(highestTempData);
         $('#filtersContainer').toggleClass('hiddenFilters showFilters');
@@ -323,6 +323,7 @@ $(document).ready(function () {
             // Get the city name after the word 'of'.
             cityName = userInput.slice(ofIndex + 3).trim();
         }
+        cityName = cityName.split(/[?.!]/).join("");
         return cityName;
     }
 
