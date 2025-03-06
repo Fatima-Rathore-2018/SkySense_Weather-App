@@ -64,5 +64,5 @@ To run this application, you will need:
 - To stop the server, you can click on the **"Port: 5500"** indicator in the bottom right corner of the VS Code window, or simply close the browser tab.
 
 
-
+### Author: Fatima Rathore (22i-2631)
    
