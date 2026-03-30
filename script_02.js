@@ -1,7 +1,7 @@
 $(document).ready(function () {
     showLoader();
 
-    const apiKey = '6beaceb65aa4ee60624314ea49d64c11';
+    const apiKey = process.env.API_KEY;
     let lat, lon;
 
     // Function to get the user's current geographical location.
