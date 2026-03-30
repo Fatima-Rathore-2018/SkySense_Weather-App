@@ -2,7 +2,7 @@ $(document).ready(function () {
     showLoader();
 
     // API key for Gemini API.
-    const apiKey = '6beaceb65aa4ee60624314ea49d64c11';
+    const apiKey = process.env.API_KEY;
     let currentTemperatureCelsius = null;
 
     function getCurrrentLocation() {
