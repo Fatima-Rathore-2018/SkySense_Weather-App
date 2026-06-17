@@ -1,7 +1,7 @@
 $(document).ready(function () {
     showLoader();
 
-    // API key for Gemini API.
+    // API key for Gemini.
     const apiKey = process.env.API_KEY;
     let currentTemperatureCelsius = null;
 
